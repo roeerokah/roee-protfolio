@@ -56,7 +56,7 @@
       <div class="container">
         <picture >
           <source srcset="assets/images/profile.webp" type="image/webp">
-          <img class="profile-image img-responsive pull-left" src="assets/images/profile.png" alt="Roee Rokah profile image">
+          <img class="profile-image img-responsive pull-left" src="assets/images/profile.png" width="200" height="200" alt="Roee Rokah profile image">
         </picture>
         <div class="profile-content pull-left">
           <h1 class="name">Roee Rokah</h1>
@@ -354,6 +354,13 @@
             </div>
             <!--//experience section-inner-->
           </section>
+          <section class="experience section">
+            <div class="section-inner">
+              <h2 class="heading">Latest Blog Posts</h2>
+              <div id="rss-feeds" class="content">
+              </div>
+            </div>
+          </section>
           <!--//experience section-->
           <!-- <section class="github section">
             <div class="section-inner">
@@ -404,7 +411,7 @@
               <div class="content">
                 <p class="intro">
                   I&rsquo;ve been working as software engineer for over
-                  <b>7+</b> years. Initially I started with java technologies
+                  <b id="experience-time"></b> years. Initially I started with java technologies
                   and later migrated to Web development.
                 </p>
                 <p>
@@ -635,19 +642,6 @@
           </aside>
           <!--//section-->
 
-          <!-- <aside class="blog aside section">
-            <div class="section-inner">
-              <h2 class="heading">Latest Blog Posts</h2>
-              <p>My random thoughts...</p>
-              <div id="rss-feeds" class="content">
-                feed content loaded via ajax -->
-          <!-- </div> -->
-          <!--//content-->
-          <!-- </div> -->
-          <!--//section-inner-->
-          <!-- </aside> -->
-          <!--//section-->
-
           <!-- <aside class="list music aside section">
             <div class="section-inner">
               <h2 class="heading">Favourite coding music</h2>
@@ -689,31 +683,6 @@
           <!--//section-inner-->
           <!-- </aside> -->
           <!--//section-->
-
-          <aside class="list music hobby aside section">
-            <div class="section-inner">
-              <h2 class="heading">Hobby and activities</h2>
-              <div class="content">
-                <p>
-                  When I am not working, I enjoy various activities both indoor
-                  and outdoor.
-                </p>
-                <ul class="list-unstyled">
-                  <li>
-                    <i class="fa fa-globe"></i> Traveling around the world
-                  </li>
-                  <li><i class="fa fa-gamepad"></i> Play video games</li>
-                  <li>
-                    <i class="fa fa-cutlery"></i> Try out food from different
-                    restaurants
-                  </li>
-                </ul>
-              </div>
-              <!--//content-->
-            </div>
-            <!--//section-inner-->
-          </aside>
-          <!--//section-->
         </div>
         <!--//secondary-->
       </div>
@@ -744,22 +713,10 @@
     <!--//footer-->
 
     <!-- Javascript -->
-    <script src="assets/plugins/jquery-1.11.3.min.js"></script>
+    <script src="assets/plugins/jquery-3.6.0.min.js"></script>
     <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script>
-    <!-- github calendar plugin -->
-    <script src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="assets/plugins/github-calendar/dist/github-calendar.css"
-    />
-    <link
-      rel="stylesheet"
-      href="assets/plugins/github-calendar/dist/github-calendar-responsive.css"
-    />
-    <script src="../cdnjs.cloudflare.com/ajax/libs/es6-promise/3.0.2/es6-promise.min.js"></script>
-    <script src="../cdnjs.cloudflare.com/ajax/libs/fetch/0.10.1/fetch.min.js"></script>
-    <!-- custom js - initializes RSS, Github Calendar, Skills and so on -->
+    <!-- custom js -->
     <script src="assets/js/main.js"></script>
   </body>
 
